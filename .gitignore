@@ -1,0 +1,15 @@
+.DS_Store
+*/.DS_Store
+.python_packages
+__pycache__
+.venv
+*/local.settings.json
+*/.python-version
+.vscode/settings.json.lock
+*.pyc
+.DS_Store
+Desktop.ini
+._*
+Thumbs.db
+.Spotlight-V100
+.Trashes

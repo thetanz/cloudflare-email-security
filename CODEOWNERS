@@ -1,0 +1,24 @@
+# for a functional example on how to use codeowners, see the below
+# https://github.com/thetanz/codeowners/blob/main/CODEOWNERS
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# *                        @thetanz/YOUR_TEAM_NAME
+# default owners for everything can be set first, latter explicit matches take precedence if they exist
+#
+# *.py                     @YOUR_GITHUB_USERNAME
+# the last matching pattern takes the most precedence. teams can be used with @org/team-name
+# only @jeffwogen would be requested for review in the case only .md files were changed
+#
+# *.md                     @ANOTHER_GITHUB_USERNAME
+#
+# emails can also be used in lieu of usernames or teamnames
+#
+# *.html                   YOUR_THETA_EMAIL
+#
+# directories can also be used in lieu of filenames/filetypes
+#
+# /.github/                ANOTHER_GITHUB_USERNAME
+#
+# if we wanted do this for a directory (without any sub-folders) we can use a wildcard instead of an ending slash
+#
+# /gotham/darksky*         ANOTHER_GITHUB_USERNAME
