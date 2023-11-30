@@ -6,7 +6,7 @@
 
 This script allows the user to perform the following actions as long as the API_KEY provided has permissions
 
-1) Enumerate a list of zones attached to an account
+1) Enumerate a list of zones attached to a Cloudflare account
 2) Enumerate a list of DNS records (CAA, SPF, DMARC, DKIM)
 3) Get the status of DNSSEC per domain and get the relevant DS record
 4) Create a default SPF record for all domains that are not configured
