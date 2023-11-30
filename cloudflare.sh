@@ -396,7 +396,7 @@ elif [ "$1" == "enable_dnssec" ]; then
         # For each zone, do the following
         for zone in $zones; do
             
-            # Send a PACTH request to the Cloudflare API to enable DNSSEC for the zone, and store the response
+            # Send a PATCH request to the Cloudflare API to enable DNSSEC for the zone, and store the response
             enable_dnssec_response=$(curl -s -X PATCH "https://api.cloudflare.com/client/v4/zones/$zone/dnssec" \
                 -H "Authorization: Bearer $API_KEY" \
                 -H "Content-Type: application/json" \
