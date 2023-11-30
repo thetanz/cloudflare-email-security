@@ -31,7 +31,7 @@ Acceptable commandline options are shown below.
 |  6) | API_KEY="api_key" ./cloudflare.sh create_dkim  | Without any additional information will create a default DKIM record for the domains that have "None" in the Record_Type column of output from "get_records" - {"type":"TXT","name":"*._domainkey","content":"v=DKIM1; p="}  |
 |  7) | API_KEY="api_key" ./cloudflare.sh create_spf "{"type":"TXT","name":"@","content":"v=spf1 ip4:192.0.2.0 ip4:192.0.2.1 include:examplesender.email -all"}"  | This will create the SPF record with information you provide in the commandline  |
 |  8) | API_KEY="api_key" ./cloudflare.sh create_demarc "{"type":"TXT","name":"_dmarc","content":"v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:example@third-party-example.com;"}" | This will create the DMARC record with information you provide in the commandline |
-|  9) | API_KEY="api_key" ./cloudflare.sh create_dkim "{"type":"TXT","name":"big-email._domainkey.example.com","content":"=DKIM1; p=76E629F05F709EF665853333EEC3F5ADE69A2362BECE40658267AB2FC3CB6CBE"}"  | This will create the DKIM record with information you provide in the commandline  |
+|  9) | API_KEY="api_key" ./cloudflare.sh create_dkim "{"type":"TXT","name":"big-email._domainkey.example.com","content":"=DKIM1; p=76E629F05F70A2362BECE40658267AB2FC3CB6CBE"}"  | This will create the DKIM record with information you provide in the commandline  |
 |  10) | API_KEY="api_key" ./cloudflare.sh enable_dnssec  | This will turn on DNSSEC for the domains that have "None" in the Record_Type column of output from "get_records" and return the DS record required to be set at your Domain Name Provider eg metaname, godaddy etc. Note that not all providers support DNSSEC.  |
 
 
