@@ -17,6 +17,7 @@ This script allows the user to perform the following actions as long as the API_
 9) Create a custom DKIM record for all domains that are not configured
 10) Enable DNSSEC for all domains that are not configured
 
+The API_KEY will need to be created in Cloudflare before running any of the commands below. You will require DNS Read / Write ability across the zones (domain names) you want to review and manage.
 
 Acceptable commandline options are shown below. 
 
